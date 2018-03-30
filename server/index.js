@@ -16,6 +16,8 @@ massive(process.env.CONNECTION_STRING)
   })
   .catch(console.log);
 
+app.get("/api/inventory");
+
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
