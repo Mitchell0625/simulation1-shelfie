@@ -1,0 +1,17 @@
+.form-div {
+  background: #3ad886;
+  width: 40vw;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+input {
+  margin: auto;
+  width: 100px;
+}
+buttons {
+  width: 200px;
+  margin-top: 30px;
+}
