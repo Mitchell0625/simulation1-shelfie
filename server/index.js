@@ -10,9 +10,11 @@ const app = express();
 app.use = json();
 app.use = cors();
 
-massive(process.env.CONNECTION_STRING).then(dbInstance => {
-  console.log(dbInstance);
-});
+massive(process.env.CONNECTION_STRING)
+  .then(dbInstance => {
+    app.set("db", dbInstance);
+  })
+  .catch(console.log);
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
